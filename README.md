@@ -10,10 +10,31 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+You will need Git, Python 3.x, Jupyter Notebook installed on your machine
 
+#### Cross-platform Install with [Anaconda](https://www.anaconda.com/distribution/) (Windows, macOS, Linux)
+
+* Select Python 3.x Installer
+
+#### Debian/Ubuntu based Linux with APT, PIP3
+
+Open up a Terminal and type:
+
+```bash
+sudo apt update
+sudo apt install python3 python3-dev python3-pip git
+sudo apt-get build-dep python3-scipy python3-matplotlib
+pip3 install scipy matplotlib bokeh pandas statsmodels scikit-learn scikit-image numexpr jupyter
 ```
-Give examples
+
+#### macOS with [Homebrew](https://brew.sh/) Package Manager
+
+Open up a Terminal and type:
+
+```bash
+brew update
+brew install python3 git
+pip3 install scipy matplotlib bokeh pandas statsmodels scikit-learn scikit-image numexpr jupyter
 ```
 
 ### Installing
@@ -22,8 +43,8 @@ A step by step series of examples that tell you how to get a development env run
 
 Say what the step will be
 
-```
-Give the example
+```bash
+git clone git@csil-git1.cs.surrey.sfu.ca:jys2/the-data-hunters.git
 ```
 
 And repeat
