@@ -1,24 +1,59 @@
-['casts_A', 'casts_B', 'casts_C', 'dirs_A', 'dirs_B', 'day']
+Features used to train model:
+['dirs_A', 'dirs_B', 'countries_A', 'countries_B']
+
 CriticAvg========================
-bayes:[0.25446478092068764, 0.2518053244592346]
-knn:[0.39260491772970973, 0.23634220743205767]
-svc:[0.3010260676650028, 0.2742651136993899]
-neuralnet:[0.27925679423183586, 0.2746810870770937]
+Bayes: Baseline 0.226 || Model 0.278 0.279
+knn: Baseline 0.203 || Model 0.251 0.250
+SVM: Baseline 0.224 || Model 0.295 0.285
+neural: Baseline 0.225 || Model 0.290 0.291
 AudienceAvg========================
-bayes:[0.25456923645775553, 0.252936772046589]
-knn:[0.39688944352005917, 0.24123682750970604]
-svc:[0.3119800332778702, 0.2805047143649473]
-neuralnet:[0.2898294509151414, 0.2895174708818636]
+Bayes: Baseline 0.233 || Model 0.278 0.278
+knn: Baseline 0.211 || Model 0.246 0.242
+SVM: Baseline 0.237 || Model 0.289 0.285
+neural: Baseline 0.236 || Model 0.287 0.285
 
 
-['casts_A', 'casts_B', 'casts_C', 'dirs_A', 'dirs_B']
+Features used to train model:
+['casts_A', 'casts_B', 'casts_C', 'countries_A', 'countries_B']
+
 CriticAvg========================
-bayes:[0.253603253836199, 0.2519023849140321]
-knn:[0.36099094102421897, 0.23707709373266778]
-svc:[0.29612682566093546, 0.2706600110926234]
-neuralnet:[0.27949944536882976, 0.27773155851358844]
+Bayes: Baseline 0.226 || Model 0.273 0.270
+knn: Baseline 0.203 || Model 0.347 0.245
+SVM: Baseline 0.224 || Model 0.293 0.276
+neural: Baseline 0.225 || Model 0.283 0.279
 AudienceAvg========================
-bayes:[0.2545553706784987, 0.2527343316694398]
-knn:[0.3659225365132187, 0.24183305601774824]
-svc:[0.30213533000554627, 0.2868829728230726]
-neuralnet:[0.290869384359401, 0.2842138103161398]
+Bayes: Baseline 0.233 || Model 0.281 0.279
+knn: Baseline 0.211 || Model 0.356 0.256
+SVM: Baseline 0.237 || Model 0.305 0.291
+neural: Baseline 0.236 || Model 0.299 0.298
+
+
+Features used to train model:
+['casts_A', 'casts_B', 'casts_C', 'dirs_A', 'dirs_B', 'countries_A', 'countries_B']
+
+CriticAvg========================
+Bayes: Baseline 0.226 || Model 0.284 0.279
+knn: Baseline 0.203 || Model 0.372 0.260
+SVM: Baseline 0.224 || Model 0.315 0.285
+neural: Baseline 0.225 || Model 0.303 0.298
+AudienceAvg========================
+Bayes: Baseline 0.233 || Model 0.285 0.283
+knn: Baseline 0.211 || Model 0.374 0.262
+SVM: Baseline 0.237 || Model 0.311 0.297
+neural: Baseline 0.236 || Model 0.308 0.303
+
+
+Features used to train model:
+['casts_A', 'casts_B', 'casts_C', 'dirs_A', 'dirs_B', 'day', 'countries_A', 'countries_B']
+
+CriticAvg========================
+Bayes: Baseline 0.226 || Model 0.284 0.281
+knn: Baseline 0.203 || Model 0.379 0.260
+SVM: Baseline 0.224 || Model 0.316 0.300
+neural: Baseline 0.225 || Model 0.301 0.295
+AudienceAvg========================
+Bayes: Baseline 0.233 || Model 0.285 0.283
+knn: Baseline 0.211 || Model 0.383 0.265
+SVM: Baseline 0.237 || Model 0.320 0.292
+neural: Baseline 0.236 || Model 0.307 0.301
+
