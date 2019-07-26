@@ -11,9 +11,9 @@ from sklearn.svm import SVC
 from sklearn.linear_model import SGDClassifier
 from sklearn.neural_network import MLPClassifier
 
-def main(plots_json):
-    # plots_json is an output file generated from step1: join tables
-    data = pd.read_json(plots_json, orient='records', lines=True)
+def main(plots_json_gz):
+    # plots_json_gz is an output file generated from step1: join tables
+    data = pd.read_json(plots_json_gz, orient='records', lines=True)
     print('Data size before dropping empty values:', len(data))
 
     # Drop empty values/plots
@@ -95,8 +95,8 @@ OUTPUT_TEMPLATE = (
 
 if __name__ == '__main__':
     if len(sys.argv) < 2:
-        print('Usage: python3 program.py <input_json>')
-        print('  e.g. python3 program.py plots.json')
+        print('Usage: python3 program.py <input_json_gz>')
+        print('  e.g. python3 program.py plots.json.gz')
     else:
-        plots_json = sys.argv[1]
-        main(plots_json)
+        plots_json_gz = sys.argv[1]
+        main(plots_json_gz)
