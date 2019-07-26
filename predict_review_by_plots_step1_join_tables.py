@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import sys
 
-def main(in_directory, output_json):
+def main(in_directory, output_json_gz):
     odata = pd.read_json(in_directory + '/omdb-data.json.gz', orient='records', lines=True)
     rdata = pd.read_json(in_directory + '/rotten-tomatoes.json.gz', orient='records', lines=True)
     wdata = pd.read_json(in_directory + '/wikidata-movies.json.gz', orient='records', lines=True)
@@ -22,13 +22,13 @@ def main(in_directory, output_json):
     # Select only the columns needed (plot => audience_average)
     data = data[['imdb_id', 'enwiki_title', 'omdb_plot', 'audience_average', 'critic_average']]
 
-    data.to_json(output_json, orient='records', lines=True)
+    data.to_json(output_json_gz, orient='records', lines=True, compression='gzip')
 
 if __name__ == '__main__':
     if len(sys.argv) < 3:
-        print('Usage: python3 program.py <input_directory> <output_json>')
-        print('  e.g. python3 program.py data plots.json')
+        print('Usage: python3 program.py <input_directory> <output_json_gz>')
+        print('  e.g. python3 program.py data plots.json.gz')
     else:
         in_directory = sys.argv[1]
-        output_json = sys.argv[2]
-        main(in_directory, output_json)
+        output_json_gz = sys.argv[2]
+        main(in_directory, output_json_gz)
