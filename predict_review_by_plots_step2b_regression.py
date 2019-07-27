@@ -5,6 +5,7 @@ from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
 from sklearn.model_selection import train_test_split
 from sklearn.pipeline import make_pipeline
 from sklearn.linear_model import LinearRegression
+from sklearn.metrics import r2_score
 
 def main(plots_json_gz):
     # plots_json_gz is an output file generated from step1: join tables
@@ -35,6 +36,10 @@ def main(plots_json_gz):
         regression_train=regression_train,
         regression_valid=regression_valid,
     ))
+
+    #r2_score
+    y_predicted = regression_model.predict(X_valid)
+    print('r2_score:', r2_score(y_valid, y_predicted))
 
 OUTPUT_TEMPLATE = (
     '\n                       Train Score | Validation Score\n'
