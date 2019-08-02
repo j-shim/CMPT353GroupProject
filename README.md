@@ -1,6 +1,6 @@
 # The Data Hunters
 
-This is data analysis on predicting adult wage (and partial works on other data) by [Sean Nam](#authors) and [June Shim](#authors) as a group project for *CMPT 353: Computational Data Science (Summer 2019)* from [Simon Fraser University](https://www.sfu.ca/), Burnaby, BC, Canada.
+This is data analysis on predicting adult wage (and partial works on other data) by [Sean Nam](#authors) and [June Shim](#authors) as a group project for *CMPT 353: Computational Data Science (Summer 2019)* from [Simon Fraser University](https://www.sfu.ca/), Burnaby, British Columbia, Canada.
 
 In this project, we applied machine learning techniques with several python libraries such as pandas and sklearn in order to answer/predict given questions.
 
@@ -12,7 +12,8 @@ You will need Git, Python 3.5+, Jupyter Notebook installed on your machine.
 
 ### Cross-platform Install with [Anaconda](https://www.anaconda.com/distribution/) (Windows, macOS, Linux) - Recommended
 
-* Select Python 3.5+ Installer.
+* Select Python 3.5+ Installer
+* Download Git [here](https://git-scm.com/)
 
 ### Debian/Ubuntu based Linux with APT
 
@@ -52,7 +53,7 @@ git clone git@csil-git1.cs.surrey.sfu.ca:jys2/the-data-hunters.git
 
 ## Usage
 
-### adult-wage
+### adult-wage/
 
 This is our main topic/focus of data analysis. The question we want to answer here is to predict whether an adult's yearly income is greater than $50,000 USD, based on many features/information about the person.
 
@@ -64,13 +65,13 @@ jupyter-notebook adult-wage-prediction.ipynb
 
 and run the cells step by step.
 
-### movie-wikidata
+### movie-wikidata/
 
 This is our first attempt on data analysis; however, we decided to change our datasets/questions since the prediction scores were not the best, and it was difficult to extract useful insights from the data.
 
 The question we want to answer here is to predict review scores of movies based on various features such as casts, directors and plots.
 
-#### predict_review_by_plots_*.py
+##### predict_review_by_plots_*.py
 
 Step 1: Extract/Clean data and save to gzipped json
 
@@ -107,7 +108,7 @@ Step 2b: Analyze data with regression
 python3 predict_review_by_plots_step2b_regression.py plots.json.gz
 ```
 
-#### RT_casts_and_directors.ipynb
+##### RT_casts_and_directors.ipynb
 
 Open by typing in Terminal:
 
@@ -117,7 +118,7 @@ jupyter-notebook RT_casts_and_directors.ipynb
 
 and run the cells step by step.
 
-### unused-data-analysis (credit card fraud detection)
+### unused-data-analysis/ (credit card fraud detection)
 
 The question we want to answer here is to predict whether a credit card transaction is fraud or not, based on information about the transaction.
 
@@ -139,6 +140,6 @@ and run the cells step by step.
 ## Acknowledgments
 
 * README template adapted from https://gist.github.com/PurpleBooth/109311bb0361f32d87a2
-* movie-wikidata data source - [Gregory Baker](https://www.cs.sfu.ca/~ggbaker/)
+* movie-wikidata data source - [Gregory Baker](https://www.cs.sfu.ca/~ggbaker/) (Instructor for the course)
 * adult-wage data source - http://archive.ics.uci.edu/ml/datasets/Adult
 * unused-data-analysis (creditcard.csv) - https://www.kaggle.com/mlg-ulb/creditcardfraud
