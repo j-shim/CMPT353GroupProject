@@ -1,0 +1,19 @@
+Features used to train model:
+['age', 'education-num', 'log-capital-gain', 'log-capital-loss', 'Federal-gov', 'Local-gov', 'Private', 'Self-emp-inc', 'Self-emp-not-inc', 'State-gov', 'Workclass_others', 'Divorced', 'Married-spouse-absent', 'Never-married', 'Separated', 'Widowed', 'Married', 'Adm-clerical', 'Craft-repair', 'Exec-managerial', 'Farming-fishing', 'Handlers-cleaners', 'Machine-op-inspct', 'Other-service', 'Prof-specialty', 'Protective-serv', 'Sales', 'Tech-support', 'Transport-moving', 'Occupation-others', 'Husband', 'Not-in-family', 'Other-relative', 'Own-child', 'Unmarried', 'Wife', 'Asian-Pac-Islander', 'Black', 'Other', 'White', 'Female', 'Male']
+
+Bayes: 0.783 0.782
+knn: 0.828 0.787
+SVM: 0.810 0.802
+neural: 0.819 0.818
+Gradient Boost: 0.853 0.825
+
+
+
+Features used to train model:
+[...'log-age'...]
+
+Bayes: 0.786 0.785
+knn: 0.830 0.792
+SVM: 0.813 0.794
+neural: 0.828 0.822
+Gradient Boost: 0.859 0.829
