@@ -29,6 +29,7 @@ def main(plots_json_gz):
 
     y_predicted = regression_model.predict(X_valid)
     r, _ = pearsonr(y_predicted, y_valid)
+    print('r value:', r)
     print('Linear Regression Model r^2 score:', r**2)
 
 if __name__ == '__main__':
