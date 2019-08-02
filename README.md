@@ -13,7 +13,7 @@ You will need Git, Python 3.5+, Jupyter Notebook installed on your machine.
 ### Cross-platform Install with [Anaconda](https://www.anaconda.com/distribution/) (Windows, macOS, Linux) - Recommended
 
 * Select Python 3.5+ Installer
-* Download Git [here](https://git-scm.com/)
+* Download Git [here](https://git-scm.com/downloads)
 
 ### Debian/Ubuntu based Linux with APT
 
