@@ -1,33 +1,28 @@
 # The Data Hunters
 
-SFU CMPT 353 Data Science Group Project by Sean Nam and June Shim
+This is data analysis on predicting adult wage (and partial works on other data) by [Sean Nam](#authors) and [June Shim](#authors) as a group project for *CMPT 353: Computational Data Science (Summer 2019)* from [Simon Fraser University](https://www.sfu.ca/), Burnaby, BC, Canada.
 
-#### Below is a README template adapted from https://gist.github.com/PurpleBooth/109311bb0361f32d87a2, To be modified later
+Detailed instructions for data analysis on [Usage](#usage) section below.
 
-## Getting Started
+## Setup
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+You will need Git, Python 3.5+, Jupyter Notebook installed on your machine
 
-### Prerequisites
+### Cross-platform Install with [Anaconda](https://www.anaconda.com/distribution/) (Windows, macOS, Linux)
 
-You will need Git, Python 3.x, Jupyter Notebook installed on your machine
+* Select Python 3.5+ Installer
 
-#### Cross-platform Install with [Anaconda](https://www.anaconda.com/distribution/) (Windows, macOS, Linux)
-
-* Select Python 3.x Installer
-
-#### Debian/Ubuntu based Linux with APT, PIP3
+### Debian/Ubuntu based Linux with APT
 
 Open up a Terminal and type:
 
 ```bash
 sudo apt update
 sudo apt install python3 python3-dev python3-pip git
-sudo apt-get build-dep python3-scipy python3-matplotlib
 pip3 install scipy matplotlib bokeh pandas statsmodels scikit-learn scikit-image numexpr jupyter
 ```
 
-#### macOS with [Homebrew](https://brew.sh/) Package Manager
+### macOS with [Homebrew](https://brew.sh/) Package Manager
 
 Open up a Terminal and type:
 
@@ -37,74 +32,32 @@ brew install python3 git
 pip3 install scipy matplotlib bokeh pandas statsmodels scikit-learn scikit-image numexpr jupyter
 ```
 
-### Installing
+If you need to install additional packages, install with pip3:
 
-A step by step series of examples that tell you how to get a development env running
+```bash
+pip3 install <package-to-install>
+```
 
-Say what the step will be
+### Cloning this repository onto your local machine
+
+Open up a Terminal, `cd` to your preferred directory and type:
 
 ```bash
 git clone git@csil-git1.cs.surrey.sfu.ca:jys2/the-data-hunters.git
 ```
 
-And repeat
+## Usage
 
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+TODO
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+* **Sean Nam** - shnam@sfu.ca / [GitHub](https://github.com/seannam1218)
+* **June Shim** - jys2@sfu.ca / [GitHub](https://github.com/j-shim)
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* README template adapted from https://gist.github.com/PurpleBooth/109311bb0361f32d87a2
+* movie-wikidata - [Gregory Baker](https://www.cs.sfu.ca/~ggbaker/)
+* adult-wage data source - http://archive.ics.uci.edu/ml/datasets/Adult
+* unused-data-analysis (creditcard.csv) - https://www.kaggle.com/mlg-ulb/creditcardfraud
